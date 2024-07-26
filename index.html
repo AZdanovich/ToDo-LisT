@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Создание задачи</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Создание задачи</h1>
+      <form id="task-form">
+        <input
+          type="text"
+          id="task-input"
+          placeholder="Введите описание задачи"
+          required
+        />
+        <label for="day">Введите срок выполнения задачи</label>
+        <input type="date" id="task-date" required />
+        <select id="task-priority">
+          <option value="низкий">Низкий</option>
+          <option value="средний">Средний</option>
+          <option value="высокий">Высокий</option>
+        </select>
+        <button type="submit">Добавить задачу</button>
+      </form>
+      <ul id="task-list"></ul>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
